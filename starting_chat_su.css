@@ -11,7 +11,7 @@ body{
 /*=============================* navbar*/
 .container-fluid{
     background-color: #D91F27 !important;
-    height: 10vh;
+/*    height: 10vh;*/
     position:relative;
 }
 .navbar-brand{
@@ -21,7 +21,7 @@ body{
 #header-navbar {
     background-color: #D91F27 !important;
     position: relative;
-    height: 10vh;
+    height: 8dvh;
     display: flex;
     align-items: center;
 /*    justify-content: center;*/
@@ -83,7 +83,7 @@ body{
 /*=============================* sidebar for Offcanvas*/
 #offcanvasSidebar{
     width:250px;
-    height: 100vh;
+    height: 100dvh;
 }
 
 #offcanvas-header{
@@ -106,7 +106,7 @@ body{
 /*=============================* sidebar for larger screen*/
 .sidebar{
     background-color: #D91F27;
-    height: 90vh;
+    height: 92dvh;
 }
 #sidebar-larger-screen{
     width:20%;
@@ -125,7 +125,7 @@ body{
     position: absolute;
     background-color: #D91F27;
     left:0;
-    bottom:5vh;
+    bottom:5dvh;
     width: 90%;
     margin-left:5%;
 
@@ -143,6 +143,15 @@ body{
 
 #wrap-main-content h1{
     margin-bottom: 50px;
+    margin-top: 2dvh !important;
+}
+#logo-primary-small-screen{
+    display: none;
+}
+
+#intro-descr{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 /*----------awarding body button----------*/
 /*#wrap-main-content a{*/
@@ -194,6 +203,14 @@ body{
         padding:30px;
         width: 100% !important;
     }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
+    }
+
+
 }
 
 /*Small devices (landscape phones, 414px and up)*/
@@ -219,6 +236,12 @@ body{
         padding:30px;
         width: 100% !important;
     }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
+    }
 }
 
 /*Medium devices (landscape phones, 576px and up)*/
@@ -243,29 +266,62 @@ body{
         padding:30px !important;
         width: 100% !important;
     }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 992px){
+/*    #intro-header{*/
+/*        font-size:46px;*/
+/*        font-weight: bold;*/
+/*    }*/
+/*    #wrap-main-content>p{*/
+/*        font-size:20px;*/
+/*    }*/
+/*    .main-content-btn{*/
+/*        font-size:20px;*/
+/*    }*/
+/*    #wrap-main-content a{*/
+/*        width:40%;*/
+/*        font-size: 20px;*/
+/*    }*/
+
+/*    #chatbot-input-field{*/
+/*        left:0 !important;*/
+/*        padding:60px;*/
+/*        width: 100% !important;*/
+/*    }*/
     #intro-header{
-        font-size:46px;
+        font-size:40px;
         font-weight: bold;
     }
     #wrap-main-content>p{
-        font-size:20px;
+        font-size:18px;
+
     }
     .main-content-btn{
-        font-size:20px;
+        font-size:18px;
     }
     #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
+        width:100%;
+        font-size: 18px;
     }
 
     #chatbot-input-field{
         left:0 !important;
-        padding:60px;
+        padding:30px !important;
         width: 100% !important;
+    }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
     }
 }
 
@@ -285,12 +341,17 @@ body{
         width:40%;
         font-size: 20px;
     }
+
 }
 
 /*!*Extra large devices (large desktops, 1200px and up)*!*/
 /*@media (min-width: 1200px) {*/
 /*}*/
-
+/*.container-fluid{*/
+/*    background-color: #D91F27 !important;*/
+/*    height: 10vh;*/
+/*    position:relative;*/
+/*}*/
 
 /*==================chatbot content==============*/
 #main-content-div{
@@ -336,7 +397,7 @@ body{
 
 /*----functional---*/
 #chat-dialog {
-    height: 70vh;
+    height: 70dvh;
     overflow-y: scroll;
     padding: 15px;
     margin-bottom: 10px;

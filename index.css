@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
 body{
@@ -11,7 +12,7 @@ body{
 /*=============================* navbar*/
 .container-fluid{
     background-color: #D91F27 !important;
-    height: 10vh;
+/*    height: 10vh;*/
     position:relative;
 }
 .navbar-brand{
@@ -21,7 +22,7 @@ body{
 #header-navbar {
     background-color: #D91F27 !important;
     position: relative;
-    height: 10vh;
+    height: 8dvh;
     display: flex;
     align-items: center;
 /*    justify-content: center;*/
@@ -60,7 +61,7 @@ body{
 /*=============================* sidebar for Offcanvas*/
 #offcanvasSidebar{
     width:250px;
-    height: 100vh;
+    height: 100dvh;
 }
 
 #offcanvas-header{
@@ -83,7 +84,7 @@ body{
 /*=============================* sidebar for larger screen*/
 .sidebar{
     background-color: #D91F27;
-    height: 90vh;
+    height: 92dvh;
 }
 #sidebar-larger-screen{
     width:20%;
@@ -102,13 +103,14 @@ body{
     position: absolute;
     background-color: #D91F27;
     left:0;
-    bottom:5vh;
+    bottom:5dvh;
     width: 90%;
     margin-left:5%;
 
 }
 #intro-header{
-
+/*    font-size: 14px !important;*/
+    font-weight: 300 !important;
 }
 
 
@@ -117,11 +119,18 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 /*    background-color: lightcyan;*/
     padding:30px;
+/*    padding-bottom:20px;*/
 }
 
 #wrap-main-content h1{
     margin-bottom: 5%;
 }
+
+#intro-descr{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
 /*----------awarding body button----------*/
 #wrap-main-content a{
     width:40%;
@@ -149,6 +158,12 @@ body{
 
 }
 
+
+/*-------------feedback link at bottom for small device---*/
+#feedback-link-bottom{
+    display: none;
+}
+
 /*===========================*/
 /* smallest iphone */
 @media (min-width: 344px) and (max-width: 414px){
@@ -168,6 +183,15 @@ body{
     }
     #wrap-main-content{
         padding:0;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -190,6 +214,15 @@ body{
     #wrap-main-content{
         padding:0;
     }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 /*Medium devices (landscape phones, 576px and up)*/
@@ -211,6 +244,15 @@ body{
     #wrap-main-content{
         padding:0;
     }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -228,6 +270,15 @@ body{
     #wrap-main-content a{
         width:40%;
         font-size: 20px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

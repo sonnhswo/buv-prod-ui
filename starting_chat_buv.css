@@ -11,7 +11,7 @@ body{
 /*=============================* navbar*/
 .container-fluid{
     background-color: #D91F27 !important;
-    height: 10vh;
+/*    height: 10vh;*/
     position:relative;
 }
 .navbar-brand{
@@ -21,7 +21,7 @@ body{
 #header-navbar {
     background-color: #D91F27 !important;
     position: relative;
-    height: 10vh;
+    height: 8dvh;
     display: flex;
     align-items: center;
 /*    justify-content: center;*/
@@ -38,6 +38,7 @@ body{
     border: none;
     background: none;
 }
+
 
 /*=============================* sidebar both*/
 .feedback-btn{
@@ -57,9 +58,62 @@ body{
 /*    background-color:green;*/
 /*    bottom:0px;*/
 }
+/*=============================* sidebar for Offcanvas*/
+/*#offcanvasSidebar{*/
+/*    width:250px;*/
+/*    height: 100dvh;*/
+/*}*/
+
+/*#offcanvas-header{*/
+/*    position:relative;*/
+/*}*/
+/*#offcanvas-header img{*/
+/*    width: 90%;*/
+/*}*/
+/*#offcanvas-header button{*/
+/*    position: absolute;*/
+/*    right:0;*/
+/*    top:50%;*/
+/*    width: 5px;*/
+/*    color:darkgray;*/
+/*}*/
+/*#offcanvas-bnt-feedback{*/
+/*    position:relative;*/
+/*!*    background-color:#fff;*!*/
+/*}*/
+/*=============================* sidebar for larger screen*/
+/*.sidebar{*/
+/*    background-color: #D91F27;*/
+/*    height: 92vh;*/
+/*}*/
+/*#sidebar-larger-screen{*/
+/*    width:20%;*/
+/*    position: relative !important;*/
+/*!*    padding: 20px !important;*!*/
+/*}*/
+/*#sidebar-larger-screen>img{*/
+/*    position:absolute;*/
+/*    top:0;*/
+/*    width:90%;*/
+/*    left:5%;*/
+
+/*}*/
+#feedback-larger-screen{
+/*    margin-top:50vh;*/
+    position: absolute;
+    background-color: #D91F27;
+    left:0;
+    bottom:5dvh;
+    width: 90%;
+    margin-left:5%;
+
+}
+#intro-header{
+
+}
 
 
-
+/*--no idea--*/
 .newchat-btn{
     background-color:#3D4586;
     color:#fff;
@@ -83,7 +137,7 @@ body{
 /*=============================* sidebar for Offcanvas*/
 #offcanvasSidebar{
     width:250px;
-    height: 100vh;
+    height: 100dvh;
 }
 
 #offcanvas-header{
@@ -106,7 +160,7 @@ body{
 /*=============================* sidebar for larger screen*/
 .sidebar{
     background-color: #D91F27;
-    height: 90vh;
+    height: 92dvh;
 }
 #sidebar-larger-screen{
     width:20%;
@@ -125,7 +179,7 @@ body{
     position: absolute;
     background-color: #D91F27;
     left:0;
-    bottom:5vh;
+    bottom:5dvh;
     width: 90%;
     margin-left:5%;
 
@@ -142,8 +196,22 @@ body{
 }
 
 #wrap-main-content h1{
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
+
+#logo-primary-small-screen{
+    display: none;
+    width:50%;
+}
+
+#intro-descr{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+/*#intro-descr a{*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    font-weight: 300 !important;*/
+/*}*/
 /*----------awarding body button----------*/
 /*#wrap-main-content a{*/
 /*    width:40%;*/
@@ -194,6 +262,12 @@ body{
         padding:30px;
         width: 100% !important;
     }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
+    }
 }
 
 /*Small devices (landscape phones, 414px and up)*/
@@ -219,12 +293,18 @@ body{
         padding:30px;
         width: 100% !important;
     }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
+    }
 }
 
 /*Medium devices (landscape phones, 576px and up)*/
 @media (min-width: 577px) and (max-width: 767px) {
     #intro-header{
-        font-size:25px;
+        font-size:30px;
         font-weight: bold;
     }
     #wrap-main-content>p{
@@ -243,12 +323,19 @@ body{
         padding:30px !important;
         width: 100% !important;
     }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
+    }
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 992px){
     #intro-header{
-        font-size:46px;
+        font-size:40px;
         font-weight: bold;
     }
     #wrap-main-content>p{
@@ -266,6 +353,12 @@ body{
         left:0 !important;
         padding:60px;
         width: 100% !important;
+    }
+
+    /*--------------*/
+    #logo-primary-small-screen{
+        display: block;
+        width:50%;
     }
 }
 
@@ -336,7 +429,7 @@ body{
 
 /*----functional---*/
 #chat-dialog {
-    height: 70vh;
+    height: 70dvh;
     overflow-y: scroll;
     padding: 15px;
     margin-bottom: 10px;
