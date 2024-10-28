@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+/*=============================* navbar*/
+.container-fluid{
+    background-color: #D91F27 !important;
+    height: 10vh;
+    position:relative;
+}
+.navbar-brand{
+    height:30px;
+}
+
+#header-navbar {
+    background-color: #D91F27 !important;
+    position: relative;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+/*    justify-content: center;*/
+}
+
+
+#header-navbar button{
+    background-color: #D91F27;
+    color: #fff;
+}
+.menu-toggle {
+    font-size: 24px;
+    color: white;
+    border: none;
+    background: none;
+}
+
+/*=============================* sidebar both*/
+.feedback-btn{
+    color:#3D4586;
+    border-radius: 45px;
+    position:relative;
+}
+.feedback-btn:hover{
+    font-weight: bold;
+    color:#3D4586;
+}
+.feedback-btn-img{
+    width:20px;
+    position: absolute;
+    top:7px;
+    left:15px;
+/*    background-color:green;*/
+/*    bottom:0px;*/
+}
+/*=============================* sidebar for Offcanvas*/
+#offcanvasSidebar{
+    width:250px;
+    height: 100vh;
+}
+
+#offcanvas-header{
+    position:relative;
+}
+#offcanvas-header img{
+    width: 90%;
+}
+#offcanvas-header button{
+    position: absolute;
+    right:0;
+    top:50%;
+    width: 5px;
+    color:darkgray;
+}
+#offcanvas-bnt-feedback{
+    position:relative;
+/*    background-color:#fff;*/
+}
+/*=============================* sidebar for larger screen*/
+.sidebar{
+    background-color: #D91F27;
+    height: 90vh;
+}
+#sidebar-larger-screen{
+    width:20%;
+    position: relative !important;
+/*    padding: 20px !important;*/
+}
+#sidebar-larger-screen>img{
+    position:absolute;
+    top:0;
+    width:90%;
+    left:5%;
+
+}
+#feedback-larger-screen{
+/*    margin-top:50vh;*/
+    position: absolute;
+    background-color: #D91F27;
+    left:0;
+    bottom:5vh;
+    width: 90%;
+    margin-left:5%;
+
+}
+#intro-header{
+
+}
+
+
+/*!*=============================* main content - SIS*!*/
+#wrap-main-content{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+/*    background-color: lightcyan;*/
+    padding:30px;
+}
+
+#wrap-main-content h1{
+    margin-bottom: 5%;
+}
+/*----------awarding body button----------*/
+#wrap-main-content a{
+    width:40%;
+    margin-top:5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*    text-align: center;*/
+    float:left;
+
+    background-color: #fff;
+    color: #1E1E1E;
+    border: 1px solid #EC221F;
+}
+#wrap-main-content a:hover{
+    background-color: #EC221F;
+    color: #fff;
+    border: 1px solid #EC221F;
+}
+
+#su-btn{
+    margin-right:10%;
+}
+#buv-btn{
+
+}
+
+/*===========================*/
+/* smallest iphone */
+@media (min-width: 344px) and (max-width: 414px){
+    #intro-header{
+        font-size:20px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:12px;
+    }
+    .main-content-btn{
+        font-size:12px;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 12px;
+    }
+    #wrap-main-content{
+        padding:0;
+    }
+}
+
+/*Small devices (landscape phones, 414px and up)*/
+@media (min-width: 414px) and (max-width: 576px) {
+    #intro-header{
+        font-size:25px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:14px;
+    }
+    .main-content-btn{
+        font-size:14px;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 14px;
+    }
+    #wrap-main-content{
+        padding:0;
+    }
+}
+
+/*Medium devices (landscape phones, 576px and up)*/
+@media (min-width: 577px) and (max-width: 767px) {
+    #intro-header{
+        font-size:25px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:14px;
+    }
+    .main-content-btn{
+        font-size:14px;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 14px;
+    }
+    #wrap-main-content{
+        padding:0;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 992px){
+    #intro-header{
+        font-size:46px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:20px;
+    }
+    .main-content-btn{
+        font-size:20px;
+    }
+    #wrap-main-content a{
+        width:40%;
+        font-size: 20px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #intro-header{
+        font-size:46px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:20px;
+    }
+    .main-content-btn{
+        font-size:20px;
+    }
+    #wrap-main-content a{
+        width:40%;
+        font-size: 20px;
+    }
+}
+
+/*!*Extra large devices (large desktops, 1200px and up)*!*/
+/*@media (min-width: 1200px) {*/
+/*}*/
+
+
+
+
+/*.main-content-btn:hover{*/
+/*    background-color:#EC221F;*/
+/*    color:#fff;*/
+/*}*/
+/*.main-content-btn a{*/
+/*    text-decoration:none;*/
+/*    color:#000;*/
+/*}*/
+/*.main-content-btn:hover a{*/
+/*    color:#fff;*/
+/*}*/
+/*.main-content-btn a:hover{*/
+/*    color:#fff;*/
+/*}*/
+
+
+
+/*#main-content-div{*/
+/*    background-color:white;*/
+/*}*/
+/*#wrap-main-content p{*/
+/*    margin-top:10%;*/
+/*}*/
+
+/*.main-content-btn{*/
+/*    height:100px;*/
+/*    border:1.5px solid #EC221F;*/
+/*    color:#000;*/
+/*    background-color:#fff;*/
+/*}*/
+
+
+
+
+
+/*!* Extra small devices (portrait phones, less than 576px)*!*/
+/*@media (max-width: 575.98px) {*/
+/*!**/
+/*.sidebar img {*/
+/*    width:200px;*/
+/*    height: auto;*/
+/*  }*/
+/*}*/
+/**!*/
+/*    #su-btn{*/
+
+/*        width:100%;*/
+/*        margin-bottom:5%;*/
+/*    }*/
+/*    #buv-btn{*/
+
+/*        width:100%;*/
+/*    }*/
+/*}*/
+/*!**/
+/*// Small devices (landscape phones, less than 768px)*/
+/*@media (max-width: 767.98px) {*/
+/* .sidebar img {*/
+/*    width:200px;*/
+/*    height: auto;*/
+/*  }*/
+/* }*/
+
+/*// Medium devices (tablets, less than 992px)*/
+/*@media (max-width: 991.98px) {*/
+/* .sidebar img {*/
+/*    width:200px;*/
+/*    height: auto;*/
+/*  }*/
+/* }*/
+
+/*// Large devices (desktops, less than 1200px)*/
+/*@media (max-width: 1199.98px) {*/
+/* .sidebar img {*/
+/*    width:200px;*/
+/*    height: auto;*/
+/*  }*/
+/* }*/
+
