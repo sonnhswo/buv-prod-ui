@@ -76,13 +76,37 @@ function convertLinksToAnchors(inputString) {
 }
 
 
+// // function convert source file link
+// function checkStringAndReturnLink(inputString) {
+//     // Kiểm tra xem chuỗi có rỗng hay không (sau khi loại bỏ khoảng trắng đầu cuối)
+//     if (inputString.trim() !== '') {
+//         // Nếu không rỗng, trả về một thẻ <a> với href đến google.com
+//         // return `<a href="https://buvbus.blob.core.windows.net/docs/BUV-JUL24-FAQ.pdf" target="_blank">BUV Frequently Asked Question</a>`;
+//         return `<a href="https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf" target="_blank">BUV Frequently Asked Question</a>`;
+//     }
+//     // Nếu chuỗi rỗng, trả về null hoặc giá trị phù hợp khác
+//     return null;
+// }
+
 // function convert source file link
 function checkStringAndReturnLink(inputString) {
     // Kiểm tra xem chuỗi có rỗng hay không (sau khi loại bỏ khoảng trắng đầu cuối)
     if (inputString.trim() !== '') {
-        // Nếu không rỗng, trả về một thẻ <a> với href đến google.com
-        // return `<a href="https://buvbus.blob.core.windows.net/docs/BUV-JUL24-FAQ.pdf" target="_blank">BUV Frequently Asked Question</a>`;
-        return `<a href="https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf" target="_blank">BUV Frequently Asked Question</a>`;
+        let sourceUrl = '';
+        switch (inputString) {
+            case 'Student Handbook':
+                sourceUrl = 'https://buvbus.blob.core.windows.net/docs/Student_Handbook_2024_2025_Oct_2024.pdf';
+                break;
+            case 'PSG Programme Handbook':
+                sourceUrl = 'https://buvbus.blob.core.windows.net/docs/PSG_Programme_Handbook_Oct_2024.pdf';
+                break;
+            case 'BUV Frequently Asked Questions':
+                sourceUrl = 'https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf';
+                break;
+            default:
+                return null;
+        }
+        return `<a href="${sourceUrl}" target="_blank">${inputString}</a>`;
     }
     // Nếu chuỗi rỗng, trả về null hoặc giá trị phù hợp khác
     return null;
@@ -133,7 +157,25 @@ function sendMessage() {
 
             const pageInfo = data.page_number ? `<strong>Page(s):</strong> ${data.page_number}` : '';
             // const sourceInfo = data.source ? `<strong>Source:</strong> <a href="https://buvbus.blob.core.windows.net/docs/BUV-JUL24-FAQ.pdf">${data.source}</a>` : '';
-            const sourceInfo = data.source ? `<strong>Source:</strong> <a href="https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf">${data.source}</a>` : '';
+            // const sourceInfo = data.source ? `<strong>Source:</strong> <a href="https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf">${data.source}</a>` : '';
+            
+            let sourceUrl = '';
+
+            switch (data.source) {
+            case 'Student Handbook':
+                sourceUrl = 'https://buvbus.blob.core.windows.net/docs/Student_Handbook_2024_2025_Oct_2024.pdf';
+                break;
+            case 'PSG Programme Handbook':
+                sourceUrl = 'https://buvbus.blob.core.windows.net/docs/PSG_Programme_Handbook_Oct_2024.pdf';
+                break;
+            case 'BUV Frequently Asked Questions':
+                sourceUrl = 'https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf';
+                break;
+            default:
+                sourceUrl = '';
+            }
+
+            const sourceInfo = sourceUrl ? `<strong>Source:</strong> <a href="${sourceUrl}">${data.source}</a>` : '';
 //            const pageInfo = data.page_number;
 //            const sourceInfo = data.source;
 
