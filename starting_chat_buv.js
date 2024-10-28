@@ -81,7 +81,8 @@ function checkStringAndReturnLink(inputString) {
     // Kiểm tra xem chuỗi có rỗng hay không (sau khi loại bỏ khoảng trắng đầu cuối)
     if (inputString.trim() !== '') {
         // Nếu không rỗng, trả về một thẻ <a> với href đến google.com
-        return `<a href="https://buvbus.blob.core.windows.net/docs/BUV-JUL24-FAQ.pdf" target="_blank">BUV Frequently Asked Question</a>`;
+        // return `<a href="https://buvbus.blob.core.windows.net/docs/BUV-JUL24-FAQ.pdf" target="_blank">BUV Frequently Asked Question</a>`;
+        return `<a href="https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf" target="_blank">BUV Frequently Asked Question</a>`;
     }
     // Nếu chuỗi rỗng, trả về null hoặc giá trị phù hợp khác
     return null;
@@ -131,7 +132,8 @@ function sendMessage() {
 
 
             const pageInfo = data.page_number ? `<strong>Page(s):</strong> ${data.page_number}` : '';
-            const sourceInfo = data.source ? `<strong>Source:</strong> <a href="https://buvbus.blob.core.windows.net/docs/BUV-JUL24-FAQ.pdf">${data.source}</a>` : '';
+            // const sourceInfo = data.source ? `<strong>Source:</strong> <a href="https://buvbus.blob.core.windows.net/docs/BUV-JUL24-FAQ.pdf">${data.source}</a>` : '';
+            const sourceInfo = data.source ? `<strong>Source:</strong> <a href="https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf">${data.source}</a>` : '';
 //            const pageInfo = data.page_number;
 //            const sourceInfo = data.source;
 
