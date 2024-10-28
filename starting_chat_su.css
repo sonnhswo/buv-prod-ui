@@ -153,6 +153,10 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
+#intro-descr>a{
+/*    color:red;*/
+    font-size: 16px !important;
+}
 /*----------awarding body button----------*/
 /*#wrap-main-content a{*/
 /*    width:40%;*/
