@@ -73,6 +73,15 @@ function parseMarkdown(text) {
 }
 
 
+// popup outlook for email address
+function convertEmailsToLinks(text) {
+    const emailRegex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi;
+    const replacedText = text.replace(emailRegex, function(email) {
+      return `<a href="mailto:${email}">${email}</a>`;
+    });
+    return replacedText;
+}
+
 
 // function convert link inside input string to tag <a>
 function convertLinksToAnchors(inputString) {
@@ -132,9 +141,9 @@ function sendMessage() {
         // Kiểm tra phản hồi từ API và thêm vào UI
         if (data && data.answer) {
             // Sử dụng hàm parseMarkdown để chuyển đổi Markdown thành HTML
-//            const formattedAnswer_converted = convertLinksToAnchors(data.answer);
-            const formattedAnswer = parseMarkdown(data.answer);
 
+            const formattedAnswer = parseMarkdown(data.answer);
+            const formattedAnswer_converted = convertEmailsToLinks(formattedAnswer);
 
             const pageInfo = data.page_number ? `<strong>Page(s):</strong> ${data.page_number}` : '';
             // const sourceInfo = data.source ? `<strong>Source:</strong> <a href="https://buvbus.blob.core.windows.net/docs/SU-JUL24-FAQ.pdf">${data.source}</a>` : '';
@@ -163,7 +172,7 @@ function sendMessage() {
 
             chatDialog.innerHTML += `
                 <div class="bot-message">
-                    <div class="text">${formattedAnswer} <br><br> ${sourceInfo}  <br> ${pageInfo}
+                    <div class="text">${formattedAnswer_converted} <br><br> ${sourceInfo}  <br> ${pageInfo}
 
                     </div>
                 </div>
