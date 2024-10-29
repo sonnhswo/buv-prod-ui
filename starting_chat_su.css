@@ -425,6 +425,7 @@ body{
     padding: 10px 12px 10px 12px;
 }
 .bot-message .text {
+    position:relative;
     background-color: #fff;
     border-radius: 7px 7px 7px 0;
     max-width: 80%;
@@ -452,24 +453,30 @@ body{
 /*---like/dislike images---*/
 .bot-message{
     position:relative;
-}
-.bot-message img{
-    position:absolute;
-    bottom:0;
-    left:0;
-    background-color: #f1f1f1;
-}
-.bot-message img:hover{
-    cursor: pointer;
-    box-shadow: 0 0 20px 5px rgba(187, 38, 52, 0.5)
-}
-.text {
-    position: relative;
-}
-.rating-icon{
 
-    width: 15px;
-    height: 15px;
+}
+/*.bot-message img{*/
+/*    position:absolute;*/
+/*    bottom:0;*/
+/*    left:0;*/
+/*    background-color: #f1f1f1;*/
+/*}*/
+/*.bot-message img:hover{*/
+/*    cursor: pointer;*/
+/*    box-shadow: 0 0 20px 5px rgba(187, 38, 52, 0.5)*/
+/*}*/
+/*.text {*/
+/*    background-color: green;*/
+/*}*/
+.rating-icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right:10px;
+    bottom:10px;
+}
+.rating-icon:hover{
+    cursor: pointer;
 }
 /*-------------------*/
 #wrap-main-content{

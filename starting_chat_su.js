@@ -173,8 +173,10 @@ function sendMessage() {
             chatDialog.innerHTML += `
                 <div class="bot-message">
                     <div class="text">${formattedAnswer_converted} <br><br> ${sourceInfo}  <br> ${pageInfo}
-
+                        <img src="./images/thumbsup.png" alt="icon" style="margin-right:30px;" class="rating-icon">
+                        <img src="./images/thumbsdown.png" alt="icon" class="rating-icon">
                     </div>
+
                 </div>
             `;
         } else {
@@ -242,6 +244,6 @@ document.getElementById('reset-btn').addEventListener('click', function () {
 //    <img src="./images/thumbsdown.png" alt="icon" style="width: 15px; height: 15px;">
 
 //<img src="./images/thumbsup.png" alt="icon" class="rating-icon">
-//        <img src="./images/thumbsdown.png" alt="icon" style="margin-left:20px;" class="rating-icon">
+//<img src="./images/thumbsdown.png" alt="icon" style="margin-left:20px;" class="rating-icon">
 
 //British University Vietnam (IHM/FE/FE(dual))
