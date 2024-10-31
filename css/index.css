@@ -32,6 +32,7 @@ body{
 #header-navbar button{
     background-color: #D91F27;
     color: #fff;
+    position: relative;
 }
 .menu-toggle {
     font-size: 24px;
@@ -39,6 +40,8 @@ body{
     border: none;
     background: none;
 }
+
+
 
 /*=============================* sidebar both*/
 .feedback-btn{
@@ -68,19 +71,25 @@ body{
     position:relative;
 }
 #offcanvas-header img{
-    width: 90%;
+    width: 80%;
 }
 #offcanvas-header button{
     position: absolute;
     right:0;
     top:50%;
-    width: 5px;
-    color:darkgray;
+    width: 15px;
+    color:#000 !important;
+/*    background-color: lightblue !important;*/
 }
 #offcanvas-bnt-feedback{
     position:relative;
 /*    background-color:#fff;*/
 }
+/*#offCanvasCloseButton{*/
+/*    width:10%;*/
+/*    font-weight: bold;*/
+/*    color:black;*/
+/*}*/
 /*=============================* sidebar for larger screen*/
 .sidebar{
     background-color: #D91F27;
@@ -226,6 +235,13 @@ body{
         bottom:20px;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    /*--------toggle bar-----*/
+    .navbar-toggler-icon{
+/*        background-color: green !important;*/
+        width: 60px;
+/*        height: 100%;*/
     }
 }
 

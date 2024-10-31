@@ -88,6 +88,8 @@ body{
 
 /*}*/
 
+/*=============thumb up thumb down button===============*/
+
 /*===========================*/
 /* smallest iphone */
 @media (min-width: 344px) and (max-width: 414px){
@@ -99,9 +101,23 @@ body{
     }
 
     /*--------------*/
+    #header-navbar{
+        left:-12px;
+    }
+
+    .navbar-toggler-icon{
+        position: relative;
+        margin-right:-20px;
+        height:40px;
+/*        background-color:green !important;*/
+    }
+
     #logo-primary-small-screen{
         display: block;
-        width:50%;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:70px;
     }
 
 
@@ -117,10 +133,26 @@ body{
     }
 
     /*--------------*/
+    #header-navbar{
+        left:-20px;
+    }
+
+    .navbar-toggler-icon{
+        position: relative;
+        margin-right:0px;
+        height:35px;
+/*        background-color:green !important;*/
+    }
+
     #logo-primary-small-screen{
         display: block;
-        width:50%;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:100px;
     }
+
+
 }
 
 /*Medium devices (landscape phones, 576px and up)*/
@@ -133,9 +165,22 @@ body{
     }
 
     /*--------------*/
+    #header-navbar{
+        left:-12px;
+    }
+
+    .navbar-toggler-icon{
+        position: relative;
+        margin-right:0px;
+        height:35px;
+    }
+
     #logo-primary-small-screen{
         display: block;
-        width:50%;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:70px;
     }
 }
 
@@ -149,9 +194,21 @@ body{
     }
 
     /*--------------*/
+    #header-navbar{
+        left:20px;
+    }
+    .navbar-toggler-icon{
+        position: relative;
+        margin-right:0px;
+        height:35px;
+    }
+
     #logo-primary-small-screen{
         display: block;
-        width:50%;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:100px;
     }
 }
 
@@ -281,29 +338,30 @@ body{
     position:relative;
 
 }
-/*.bot-message img{*/
-/*    position:absolute;*/
-/*    bottom:0;*/
-/*    left:0;*/
-/*    background-color: #f1f1f1;*/
-/*}*/
-/*.bot-message img:hover{*/
-/*    cursor: pointer;*/
-/*    box-shadow: 0 0 20px 5px rgba(187, 38, 52, 0.5)*/
-/*}*/
-/*.text {*/
-/*    background-color: green;*/
-/*}*/
+
 .rating-icon{
     position: absolute;
     width: 20px;
     height: 20px;
     right:10px;
     bottom:10px;
+    opacity: 0.3;
 }
 .rating-icon:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
+
+/*.selected {*/
+/*    border: 2px solid blue; !* Thêm viền xanh để đánh dấu div được chọn *!*/
+/*}*/
+
+.rating-icon.selected {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
 /*-------------------*/
 #wrap-main-content{
 /*    display: none;*/
@@ -312,3 +370,4 @@ body{
 #chat-dialog{
     display: none;
 }
+

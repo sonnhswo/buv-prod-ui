@@ -90,24 +90,25 @@ window.onload = function() {
 
 
     /*------------------------set awarding body button----------------*/
-    const suBtn = document.getElementById('su-btn');
-    const buvBtn = document.getElementById('buv-btn');
 
-    // set heigh back to auto to get the correct height
-    suBtn.style.height = 'auto';
-    buvBtn.style.height = 'auto';
-
-    // get height
-    const suBtnHeight = suBtn.offsetHeight;
-    const buvBtnHeight = buvBtn.offsetHeight;
-
-    // get max height
-    const maxHeight = Math.max(suBtnHeight, buvBtnHeight);
-
-    // set hight equally
-    suBtn.style.height = `${maxHeight}px`;
-    buvBtn.style.height = `${maxHeight}px`;
-
+//    const suBtn = document.getElementById('su-btn');
+//    const buvBtn = document.getElementById('buv-btn');
+//
+//    // set heigh back to auto to get the correct height
+//    suBtn.style.height = 'auto';
+//    buvBtn.style.height = 'auto';
+//
+//    // get height
+//    const suBtnHeight = suBtn.offsetHeight;
+//    const buvBtnHeight = buvBtn.offsetHeight;
+//
+//    // get max height
+//    const maxHeight = Math.max(suBtnHeight, buvBtnHeight);
+//
+//    // set hight equally
+//    suBtn.style.height = `${maxHeight}px`;
+//    buvBtn.style.height = `${maxHeight}px`;
+//
 
 
     /*----------------------------------*/
