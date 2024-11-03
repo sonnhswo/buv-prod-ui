@@ -150,4 +150,57 @@ window.onload = function() {
 
 
 
+/*=========================================================================*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Lấy element của span
+    const spanElement = document.querySelector('.navbar-toggler-icon');
+
+
+
+    // Kiểm tra xem span có tồn tại hay không
+    if (spanElement) {
+        // Tính khoảng cách từ lề trái của span đến lề trái màn hình
+        const leftOffset = spanElement.getBoundingClientRect().left;
+        console.log("Left Offset:", leftOffset); // Log khoảng cách lề trái
+
+        // Tính khoảng cách từ lề phải của span đến lề trái màn hình
+        const rightOffset = spanElement.getBoundingClientRect().left + spanElement.offsetWidth;
+        console.log("Right Offset:", rightOffset); // Log khoảng cách lề phải
+
+//        // Tổng khoảng cách lề trái và lề phải
+//        const totalOffset = leftOffset + rightOffset;
+//        console.log("Total Offset:", totalOffset); // Log tổng khoảng cách
+
+        // Đặt vị trí left cho #logo-primary-small-screen
+        const logo = document.querySelector('#logo-primary-small-screen');
+        if (logo) {
+            logo.style.left = `${rightOffset}px`;
+//            console.log("Logo left position set to:", totalOffset); // Log giá trị left đã được set
+        }
+
+        /*----------------------------*/
+        // Lấy element của h1 bằng id
+        const h1Element = document.getElementById('intro-header');
+
+        // Kiểm tra xem h1 có tồn tại hay không
+        if (h1Element) {
+            // Tính khoảng cách từ lề trái của h1 đến lề trái màn hình
+            const h1LeftOffset = h1Element.getBoundingClientRect().left;
+            console.log("H1 Left Offset:", h1LeftOffset); // Log khoảng cách lề trái của h1
+
+            // Lấy element của #header-navbar và set thuộc tính left
+            const headerNavbar = document.getElementById('header-navbar');
+            const dist = Math.abs(leftOffset-h1LeftOffset)
+            if (headerNavbar) {
+                headerNavbar.style.left = `-${dist}px`;
+                console.log("Header Navbar left position set to:", `-${dist}px`); // Log giá trị left đã được set
+            }
+        }
+
+    }
+});
+
+
+
 

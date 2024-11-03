@@ -100,17 +100,17 @@ body{
         width: 100% !important;
     }
 
-    /*--------------*/
-    #header-navbar{
-        left:-12px;
-    }
+/*    !*--------------*!*/
+/*    #header-navbar{*/
+/*        left:-12px;*/
+/*    }*/
 
-    .navbar-toggler-icon{
-        position: relative;
-        margin-right:-20px;
-        height:40px;
+/*    .navbar-toggler-icon{*/
+/*        position: relative;*/
+/*        margin-right:-20px;*/
+/*        height:40px;*/
 /*        background-color:green !important;*/
-    }
+/*    }*/
 
     #logo-primary-small-screen{
         display: block;
@@ -133,22 +133,22 @@ body{
     }
 
     /*--------------*/
-    #header-navbar{
-        left:-20px;
-    }
+/*    #header-navbar{*/
+/*        left:-20px;*/
+/*    }*/
 
-    .navbar-toggler-icon{
-        position: relative;
-        margin-right:0px;
-        height:35px;
-    }
+/*    .navbar-toggler-icon{*/
+/*        position: relative;*/
+/*        margin-right:0px;*/
+/*        height:35px;*/
+/*    }*/
 
     #logo-primary-small-screen{
         display: block;
         position: absolute;
         height:70%;
         top:15%;
-        left:100px;
+/*        left:100px;*/
     }
 
 
@@ -165,7 +165,7 @@ body{
 
     /*--------------*/
     #header-navbar{
-        left:-12px;
+/*        left:0px;*/
     }
 
     .navbar-toggler-icon{
@@ -179,7 +179,7 @@ body{
         position: absolute;
         height:70%;
         top:15%;
-        left:70px;
+        left:80px;
     }
 }
 
