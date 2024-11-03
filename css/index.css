@@ -61,6 +61,12 @@ body{
 /*    background-color:green;*/
 /*    bottom:0px;*/
 }
+
+#logo-primary-small-screen{
+    display: none;
+}
+
+
 /*=============================* sidebar for Offcanvas*/
 #offcanvasSidebar{
     width:250px;
@@ -85,11 +91,12 @@ body{
     position:relative;
 /*    background-color:#fff;*/
 }
-/*#offCanvasCloseButton{*/
+#offCanvasCloseButton{
 /*    width:10%;*/
 /*    font-weight: bold;*/
 /*    color:black;*/
-/*}*/
+    background-color: lightgray;
+}
 /*=============================* sidebar for larger screen*/
 .sidebar{
     background-color: #D91F27;
@@ -142,6 +149,7 @@ body{
     font-weight: 300;
 }
 
+
 /*----------awarding body button----------*/
 #wrap-main-content>a{
     width:40%;
@@ -175,6 +183,14 @@ body{
     display: none;
 }
 
+
+/*#logo-primary-small-screen{*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    height:70%;*/
+/*    top:15%;*/
+/*    left:80px;*/
+/*}*/
 /*===========================*/
 /* smallest iphone */
 @media (min-width: 344px) and (max-width: 414px){
@@ -205,6 +221,36 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+
+
+/*    !*--------------*!*/
+/*    #header-navbar{*/
+/*        left:-12px;*/
+/*    }*/
+
+/*    .navbar-toggler-icon{*/
+/*        position: relative;*/
+/*        margin-right:-20px;*/
+/*        height:40px;*/
+/*    }*/
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:20%;
+    }
+
+    /*#logo-primary-small-screen{*/
+    /*    display: block;*/
+    /*    position: absolute;*/
+    /*    height:70%;*/
+    /*    top:15%;*/
+    /*    left:80px;*/
+    /*}*/
+
 }
 
 /*Small devices (landscape phones, 414px and up)*/
@@ -237,12 +283,42 @@ body{
         transform: translate(-50%, -50%);
     }
 
-    /*--------toggle bar-----*/
-    .navbar-toggler-icon{
+/*    !*--------toggle bar-----*!*/
+/*    .navbar-toggler-icon{*/
 /*        background-color: green !important;*/
-        width: 60px;
+/*        width: 60px;*/
 /*        height: 100%;*/
+/*    }*/
+
+/*    !*--------------*!*/
+/*    #header-navbar{*/
+/*        left:-20px;*/
+/*    }*/
+
+/*    .navbar-toggler-icon{*/
+/*        position: relative;*/
+/*        margin-right:0px;*/
+/*        height:35px;*/
+/*    }*/
+
+/*    #logo-primary-small-screen{*/
+/*        display: block;*/
+/*!*        position: absolute;*!*/
+/*        height:70%;*/
+/*        top:15%;*/
+/*!*        left:100px;*!*/
+/*    }*/
+
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:20%;
     }
+
+
 }
 
 /*Medium devices (landscape phones, 576px and up)*/
@@ -274,6 +350,34 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+
+    /*    !*--------------*!*/
+    /*    #header-navbar{*/
+    /*        left:-20px;*/
+    /*    }*/
+
+    /*    .navbar-toggler-icon{*/
+    /*        position: relative;*/
+    /*        margin-right:0px;*/
+    /*        height:35px;*/
+    /*    }*/
+
+/*        #logo-primary-small-screen{*/
+/*            display: block;*/
+/*    !*        position: absolute;*!*/
+/*            height:70%;*/
+/*            top:15%;*/
+/*    !*        left:100px;*!*/
+/*        }*/
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:20%;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -301,6 +405,36 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+
+    /*    !*--------------*!*/
+    /*    #header-navbar{*/
+    /*        left:-20px;*/
+    /*    }*/
+
+    /*    .navbar-toggler-icon{*/
+    /*        position: relative;*/
+    /*        margin-right:0px;*/
+    /*        height:35px;*/
+    /*    }*/
+
+/*        #logo-primary-small-screen{*/
+/*            display: block;*/
+/*    !*        position: absolute;*!*/
+/*            height:70%;*/
+/*            top:15%;*/
+/*    !*        left:100px;*!*/
+/*        }*/
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:20%;
+    }
+
+
 }
 
 /*Large devices (desktops, 992px and up)*/

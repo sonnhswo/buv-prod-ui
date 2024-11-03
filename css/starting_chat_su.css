@@ -117,7 +117,7 @@ body{
         position: absolute;
         height:70%;
         top:15%;
-        left:70px;
+        left:80px;
     }
 
 
@@ -141,7 +141,6 @@ body{
         position: relative;
         margin-right:0px;
         height:35px;
-/*        background-color:green !important;*/
     }
 
     #logo-primary-small-screen{

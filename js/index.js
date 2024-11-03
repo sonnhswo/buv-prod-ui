@@ -41,7 +41,6 @@ window.onload = function() {
     buvBtn.style.height = `${maxHeight}px`;
 
 
-
     /*----------------------------------*/
     const image = document.querySelector('#offcanvas-header img');
 
@@ -57,11 +56,9 @@ window.onload = function() {
         image.style.marginTop = `${imageMargin}px`;
     }
 
-
     /*------------------can chinh image logo - sidebar - thang hang voi chu Studen Info Ser-------------------*/
     const introHeader = document.getElementById('intro-header');
     const imageLogo = document.querySelector('#sidebar-larger-screen img');
-
 
     if (introHeader) {
         // Lấy chiều cao của h1 bằng getBoundingClientRect()
@@ -74,8 +71,14 @@ window.onload = function() {
         const imageHeight = imageLogo.getBoundingClientRect().height;
         console.log('Chiều cao của img logo:', imageHeight, 'px');
     }
-    const marginTopValue = Math.max(0, imageHeight - headerHeight);
-    introHeader.style.marginTop = `${marginTopValue}px`;
+
+//    const marginTopValue = Math.max(0, imageHeight - headerHeight);
+//    introHeader.style.marginTop = `${marginTopValue}px`;
 
 };
+
+
+
+
+
 

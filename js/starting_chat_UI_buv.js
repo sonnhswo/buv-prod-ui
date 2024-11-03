@@ -143,8 +143,8 @@ window.onload = function() {
         const imageHeight = imageLogo.getBoundingClientRect().height;
         console.log('Chiều cao của img logo:', imageHeight, 'px');
     }
-    const marginTopValue = Math.max(0, imageHeight - headerHeight);
-    introHeader.style.marginTop = `${marginTopValue}px`;
+//    const marginTopValue = Math.max(0, imageHeight - headerHeight);
+//    introHeader.style.marginTop = `${marginTopValue}px`;
 
 };
 
