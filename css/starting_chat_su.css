@@ -49,9 +49,9 @@ body{
 /*    margin-bottom: 50px;*/
 /*    margin-top: 2dvh !important;*/
 /*}*/
-#logo-primary-small-screen{
-    display: none;
-}
+/*#logo-primary-small-screen{*/
+/*    display: none;*/
+/*}*/
 
 /*#intro-descr{*/
 /*    font-family: 'Poppins', sans-serif;*/
@@ -98,6 +98,7 @@ body{
         left:0 !important;
         padding:30px;
         width: 100% !important;
+        box-sizing: border-box;
     }
 
 /*    !*--------------*!*/
@@ -130,6 +131,7 @@ body{
         left:0 !important;
         padding:30px;
         width: 100% !important;
+        box-sizing: border-box;
     }
 
     /*--------------*/
@@ -161,6 +163,7 @@ body{
         left:0 !important;
         padding:30px !important;
         width: 100% !important;
+        box-sizing: border-box;
     }
 
     /*--------------*/
@@ -190,6 +193,7 @@ body{
         left:0 !important;
         padding:30px !important;
         width: 100% !important;
+        box-sizing: border-box;
     }
 
     /*--------------*/
@@ -286,6 +290,7 @@ body{
     height: 70dvh;
     overflow-y: scroll;
     padding: 15px;
+    box-sizing: border-box;
     margin-bottom: 10px;
     background-color: #f1f1f1;
     border-radius: 8px;
@@ -305,6 +310,7 @@ body{
     border-radius: 7px 7px 0 7px;
     max-width: 80%;
     padding: 10px 12px 10px 12px;
+    box-sizing: border-box;
 }
 .bot-message .text {
     position:relative;
@@ -312,6 +318,7 @@ body{
     border-radius: 7px 7px 7px 0;
     max-width: 80%;
     padding: 10px 12px 10px 12px;
+    box-sizing: border-box;
     border: 1px #D6BC97 solid;
 }
 .user-message .avatar {

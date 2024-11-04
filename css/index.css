@@ -134,11 +134,10 @@ body{
 #wrap-main-content{
     font-family: 'Plus Jakarta Sans', sans-serif;
 /*    background-color: lightcyan;*/
-    width: 95dvh;
+    width: 100%;
     padding:30px;
     box-sizing: border-box;
 /*    padding-bottom:20px;*/
-
 }
 
 #wrap-main-content h1{

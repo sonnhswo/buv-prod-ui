@@ -23,6 +23,13 @@ if (!sessionId) {
 
 console.log(sessionId);
 
+//// Sinh mới sessionId mỗi khi trang web được truy cập và lưu vào localStorage
+//let sessionId = generateUUID();
+//localStorage.setItem('sessionId', sessionId);
+//console.log("Generated sessionId on page load:", sessionId);
+
+
+
 // Function to parse Markdown text into HTML
 function parseMarkdown(text) {
     let html = text.replace(/\n/g, '<br>');
@@ -176,4 +183,5 @@ document.getElementById('reset-btn').addEventListener('click', function () {
     // gen new sessionID
     sessionId = generateUUID();
     localStorage.setItem('sessionId', sessionId);
+    console.log("Generated sessionId on reset:", sessionId);
 });
