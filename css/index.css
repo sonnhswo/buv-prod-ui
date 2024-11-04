@@ -455,14 +455,7 @@ body{
         font-size: 20px;
     }
 
-    #wrap-main-content{
-        font-family: 'Plus Jakarta Sans', sans-serif;
-    /*    background-color: lightcyan;*/
-        width: 85dvh;
-        padding:30px;
-        box-sizing: border-box;
-    /*    padding-bottom:20px;*/
-    }
+    
 }
 
 /*!*Extra large devices (large desktops, 1200px and up)*!*/
