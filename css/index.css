@@ -134,6 +134,7 @@ body{
 #wrap-main-content{
     font-family: 'Plus Jakarta Sans', sans-serif;
 /*    background-color: lightcyan;*/
+    width: 95dvh;
     padding:30px;
     box-sizing: border-box;
 /*    padding-bottom:20px;*/
@@ -142,6 +143,7 @@ body{
 
 #wrap-main-content h1{
     margin-bottom: 5%;
+
 }
 
 #intro-descr{
