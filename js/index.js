@@ -120,13 +120,29 @@ document.addEventListener("DOMContentLoaded", function() {
             const headerNavbar = document.getElementById('header-navbar');
             const dist = Math.abs(leftOffset-h1LeftOffset)
             if (headerNavbar) {
-                headerNavbar.style.left = `-${dist}px`;
-                console.log("Header Navbar left position set to:", `-${dist}px`); // Log giá trị left đã được set
+
+
+                const viewportWidth = window.innerWidth;
+                console.log("Viewport Width:", viewportWidth);
+
+                // Kiểm tra điều kiện về chiều rộng của viewport
+                if (viewportWidth > 852) {
+//                    alert("bigger");
+                    headerNavbar.style.left = `-${dist-100}px`;
+                    console.log("Header Navbar left position set to:", `-${dist}px`); // Log giá trị left đã được set
+                } else {
+//                    alert("smaller");
+                    headerNavbar.style.left = `-${dist}px`;
+                    console.log("Header Navbar left position set to:", `-${dist}px`); // Log giá trị left đã được set
+                }
+
             }
         }
 
     }
 });
+
+
 
 
 
@@ -151,5 +167,53 @@ document.addEventListener("DOMContentLoaded", function() {
 //});
 
 
+//document.addEventListener("DOMContentLoaded", function() {
+//    // Lấy chiều rộng toàn màn hình (viewport width)
+//    const viewportWidth = window.innerWidth;
+//
+//    // Kiểm tra nếu viewport lớn hơn 992px
+//    if (viewportWidth > 992) {
+//        // Lấy phần tử #chatbot-input-field
+//        const chatbotInputField = document.getElementById('chatbot-input-field');
+//
+//        // Kiểm tra nếu phần tử #chatbot-input-field tồn tại
+//        if (chatbotInputField) {
+//            // Lấy chiều rộng của #chatbot-input-field
+//            const chatbotInputFieldWidth = chatbotInputField.offsetWidth;
+//
+//            // Lấy phần tử #wrap-main-content
+//            const wrapMainContent = document.getElementById('wrap-main-content');
+//
+//            // Kiểm tra nếu phần tử #wrap-main-content tồn tại
+//            if (wrapMainContent) {
+//                // Đặt chiều rộng của #wrap-main-content bằng với chiều rộng của #chatbot-input-field
+//                wrapMainContent.style.width = `${chatbotInputFieldWidth}px`;
+//                console.log(`#wrap-main-content width set to: ${chatbotInputFieldWidth}px`);
+//            }
+//        }
+//    }
+//});
 
 
+//document.addEventListener("DOMContentLoaded", function() {
+//    // Lấy element của #logo-primary-small-screen
+//    const logoPrimary = document.getElementById('logo-primary-small-screen');
+//    const headerNavbar = document.getElementById('header-navbar');
+//
+//    // Kiểm tra xem logo có tồn tại và headerNavbar có tồn tại không
+//    if (logoPrimary && headerNavbar) {
+//        // Lắng nghe sự kiện thay đổi display của logo
+//        const observer = new MutationObserver(function(mutations) {
+//            mutations.forEach(function(mutation) {
+//                if (window.getComputedStyle(logoPrimary).display === 'block') {
+//                    // Khi logo có display là block, đặt chiều cao cho #header-navbar
+//                    headerNavbar.style.height = '11dvh';
+//                    console.log("Height of #header-navbar set to 11dvh");
+//                }
+//            });
+//        });
+//
+//        // Khởi tạo observer để theo dõi sự thay đổi của style
+//        observer.observe(logoPrimary, { attributes: true, attributeFilter: ['style', 'class'] });
+//    }
+//});

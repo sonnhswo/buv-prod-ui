@@ -193,14 +193,34 @@ document.addEventListener("DOMContentLoaded", function() {
             const headerNavbar = document.getElementById('header-navbar');
             const dist = Math.abs(leftOffset-h1LeftOffset)
             if (headerNavbar) {
-                headerNavbar.style.left = `-${dist}px`;
-                console.log("Header Navbar left position set to:", `-${dist}px`); // Log giá trị left đã được set
+
+
+                const viewportWidth = window.innerWidth;
+                console.log("Viewport Width:", viewportWidth);
+
+                // Kiểm tra điều kiện về chiều rộng của viewport
+                if (viewportWidth > 852) {
+//                    alert("bigger");
+                    headerNavbar.style.left = `-${dist-100}px`;
+                    console.log("Header Navbar left position set to:", `-${dist}px`); // Log giá trị left đã được set
+                } else {
+//                    alert("smaller");
+                    headerNavbar.style.left = `-${dist}px`;
+                    console.log("Header Navbar left position set to:", `-${dist}px`); // Log giá trị left đã được set
+                }
+
             }
         }
 
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const wrapMainContent = document.querySelector("#wrap-main-content");
+    const chatDialog = document.querySelector("#chat-dialog");
 
-
-
+    if (wrapMainContent && chatDialog) {
+      const width = wrapMainContent.clientWidth;
+      chatDialog.style.width = width + "px";
+    }
+  });

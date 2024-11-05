@@ -75,13 +75,15 @@ body{
 
 #offcanvas-header{
     position:relative;
+
 }
 #offcanvas-header img{
     width: 80%;
+    margin-left: 3% !important;
 }
 #offcanvas-header button{
     position: absolute;
-    right:0;
+    right:3%;
     top:50%;
     width: 15px;
     color:#000 !important;
@@ -134,7 +136,7 @@ body{
 #wrap-main-content{
     font-family: 'Plus Jakarta Sans', sans-serif;
 /*    background-color: lightcyan;*/
-    width: 100%;
+    width: 80dvw !important;
     padding:30px;
     box-sizing: border-box;
 /*    padding-bottom:20px;*/
@@ -192,6 +194,11 @@ body{
 /*    top:15%;*/
 /*    left:80px;*/
 /*}*/
+.navbar-toggler-icon{
+    outline: none;
+}
+
+
 /*===========================*/
 /* smallest iphone */
 @media (min-width: 344px) and (max-width: 414px){
@@ -223,6 +230,10 @@ body{
         transform: translate(-50%, -50%);
     }
 
+    /*-----logo school setting for horizontal mobile ------*/
+/*    #header-navbar {*/
+/*        height: 8dvh;*/
+/*    }*/
 
 
 /*    !*--------------*!*/
@@ -322,8 +333,7 @@ body{
 
 }
 
-/*Medium devices (landscape phones, 576px and up)*/
-@media (min-width: 577px) and (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 660px) {
     #intro-header{
         font-size:25px;
         font-weight: bold;
@@ -353,36 +363,98 @@ body{
     }
 
 
-    /*    !*--------------*!*/
-    /*    #header-navbar{*/
-    /*        left:-20px;*/
-    /*    }*/
 
-    /*    .navbar-toggler-icon{*/
-    /*        position: relative;*/
-    /*        margin-right:0px;*/
-    /*        height:35px;*/
-    /*    }*/
+    /*--------------*/
+    #header-navbar{
+/*        left:0px;*/
+    }
 
-/*        #logo-primary-small-screen{*/
-/*            display: block;*/
-/*    !*        position: absolute;*!*/
-/*            height:70%;*/
-/*            top:15%;*/
-/*    !*        left:100px;*!*/
-/*        }*/
+/*    .navbar-toggler-icon{*/
+/*        position: relative;*/
+/*        margin-right:0px;*/
+/*        height:35px;*/
+/*    }*/
 
     #logo-primary-small-screen{
         display: block;
         position: absolute;
         height:70%;
         top:15%;
-/*        left:20%;*/
+/*        left:80px;*/
     }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 11dvh;
+    }
+
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 992px){
+/*-----logo school setting for horizontal mobile ------*/
+/*    #header-navbar {*/
+/*        height: 8dvh;*/
+/*    }*/
+
+
+/*Medium devices (landscape phones, 576px and up)*/
+@media (min-width: 661px) and (max-width: 767px) {
+    #intro-header{
+        font-size:25px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:14px;
+    }
+    .main-content-btn{
+        font-size:14px;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 14px;
+    }
+    #wrap-main-content{
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /*--------------*/
+    #header-navbar{
+        left:50px;
+    }
+
+/*    .navbar-toggler-icon{*/
+/*        position: relative;*/
+/*        margin-right:0px;*/
+/*        height:35px;*/
+/*    }*/
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+        left:70px !important;
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 819px){
     #intro-header{
         font-size:46px;
         font-weight: bold;
@@ -407,11 +479,10 @@ body{
         transform: translate(-50%, -50%);
     }
 
-
-    /*    !*--------------*!*/
-    /*    #header-navbar{*/
-    /*        left:-20px;*/
-    /*    }*/
+        /*--------------*/
+        #header-navbar{
+            left:80px;
+        }
 
     /*    .navbar-toggler-icon{*/
     /*        position: relative;*/
@@ -419,27 +490,22 @@ body{
     /*        height:35px;*/
     /*    }*/
 
-/*        #logo-primary-small-screen{*/
-/*            display: block;*/
-/*    !*        position: absolute;*!*/
-/*            height:70%;*/
-/*            top:15%;*/
-/*    !*        left:100px;*!*/
-/*        }*/
+        #logo-primary-small-screen{
+            display: block;
+            position: absolute;
+            height:70%;
+            top:15%;
+            left:90px !important;
+        }
 
-    #logo-primary-small-screen{
-        display: block;
-        position: absolute;
-        height:70%;
-        top:15%;
-/*        left:20%;*/
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
     }
-
-
 }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 820px) and (max-width: 852px){
     #intro-header{
         font-size:46px;
         font-weight: bold;
@@ -455,12 +521,210 @@ body{
         font-size: 20px;
     }
 
-    
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        /*--------------*/
+        #header-navbar{
+            left:60px;
+        }
+
+    /*    .navbar-toggler-icon{*/
+    /*        position: relative;*/
+    /*        margin-right:0px;*/
+    /*        height:35px;*/
+    /*    }*/
+
+        #logo-primary-small-screen{
+            display: block;
+            position: absolute;
+            height:70%;
+            top:15%;
+            left:70px !important;
+        }
+
+        /*-----logo school setting for horizontal mobile ------*/
+        #header-navbar {
+            height: 12dvh;
+        }
+
+
 }
 
-/*!*Extra large devices (large desktops, 1200px and up)*!*/
-/*@media (min-width: 1200px) {*/
-/*}*/
+@media (min-width: 853px) and (max-width: 991px){
+    #intro-header{
+        font-size:46px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:20px;
+    }
+    .main-content-btn{
+        font-size:20px;
+    }
+    #wrap-main-content a{
+        width:40%;
+        font-size: 20px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        /*--------------*/
+        #header-navbar{
+            left:-0px !important;
+            background-color: lightgreen;
+        }
+
+/*!*        .navbar-toggler-icon{*!*/
+/*!*            position: relative;*!*/
+/*!*            margin-right:0px;*!*/
+/*!*            height:35px;*!*/
+/*!*        }*!*/
+
+        #logo-primary-small-screen{
+            display: block;
+            position: absolute;
+            height:70%;
+            top:15%;
+            left:120px;
+        }
+
+
+        /*-----logo school setting for horizontal mobile ------*/
+        #header-navbar {
+            height: 12dvh;
+        }
+
+}
+
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1024px){
+    #intro-header{
+        font-size:46px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:20px;
+    }
+    .main-content-btn{
+        font-size:20px;
+    }
+    #wrap-main-content a{
+        width:40%;
+        font-size: 20px;
+    }
+
+
+    #wrap-main-content{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+/*        background-color: lightcyan;*/
+        width: 75dvh;
+        padding:30px;
+        box-sizing: border-box;
+    /*    padding-bottom:20px;*/
+    }
+
+
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1179px){
+    #intro-header{
+        font-size:46px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:20px;
+    }
+    .main-content-btn{
+        font-size:20px;
+    }
+    #wrap-main-content a{
+        width:40%;
+        font-size: 20px;
+    }
+
+
+    #wrap-main-content{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+/*        background-color: lightcyan;*/
+        width: 90dvh;
+        padding:30px;
+        box-sizing: border-box;
+    /*    padding-bottom:20px;*/
+    }
+}
+
+@media (min-width: 1180px) and (max-width: 1279px){
+    #intro-header{
+        font-size:46px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:20px;
+    }
+    .main-content-btn{
+        font-size:20px;
+    }
+    #wrap-main-content a{
+        width:40%;
+        font-size: 20px;
+    }
+
+
+    #wrap-main-content{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+/*        background-color: lightcyan;*/
+        width: 100dvh;
+        padding:30px;
+        box-sizing: border-box;
+    /*    padding-bottom:20px;*/
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1280px) {
+    #intro-header{
+        font-size:46px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:20px;
+    }
+    .main-content-btn{
+        font-size:20px;
+    }
+    #wrap-main-content a{
+        width:40%;
+        font-size: 20px;
+    }
+
+
+    #wrap-main-content{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+/*        background-color: lightcyan;*/
+        width: 110dvh;
+        padding:30px;
+        box-sizing: border-box;
+    /*    padding-bottom:20px;*/
+    }
+}
 
 
 
