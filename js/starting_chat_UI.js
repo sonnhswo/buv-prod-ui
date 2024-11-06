@@ -1,8 +1,22 @@
-
 window.addEventListener("orientationchange", function() {
     location.reload();  // Refresh lại toàn bộ trang
-    alert("change lanscape");
+//    alert("change lanscape");
 });
+
+window.addEventListener('orientationchange', function() {
+    // Lấy tất cả các link có rel là "stylesheet"
+    const links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    // Duyệt qua từng link và cập nhật href để buộc trình duyệt tải lại tệp CSS
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        link.setAttribute('href', href.split('?')[0] + '?v=' + new Date().getTime());
+    });
+
+    console.log("Tệp CSS đã được tải lại sau khi thay đổi orientation");
+});
+
+
 /*----------------------------------------------------------*/
 
 
