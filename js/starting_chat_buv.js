@@ -23,6 +23,13 @@ if (!sessionId) {
 
 console.log(sessionId);
 
+//// Sinh mới sessionId mỗi khi trang web được truy cập và lưu vào localStorage
+//let sessionId = generateUUID();
+//localStorage.setItem('sessionId', sessionId);
+//console.log("Generated sessionId on page load:", sessionId);
+
+
+
 // Function to parse Markdown text into HTML
 function parseMarkdown(text) {
     let html = text.replace(/\n/g, '<br>');
@@ -88,8 +95,8 @@ function sendMessage() {
                 case 'PSG Programme Handbook':
                     sourceUrl = 'https://buvbus.blob.core.windows.net/docs/PSG_Programme_Handbook_Oct_2024.pdf';
                     break;
-                case 'BUV Frequently Asked Questions':
-                    sourceUrl = 'https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf';
+                case 'SU Frequently Asked Questions':
+                    sourceUrl = 'https://buvbus.blob.core.windows.net/docs/SU_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf';
                     break;
                 default:
                     sourceUrl = '';
@@ -99,7 +106,9 @@ function sendMessage() {
 
             chatDialog.innerHTML += `
                 <div class="bot-message">
-                    <div class="text">${formattedAnswerConverted} <br><br> ${sourceInfo}  <br> ${pageInfo}
+
+                    <div class="text">
+                        ${formattedAnswerConverted} <br><br> ${sourceInfo}  <br> ${pageInfo}
                         <img src="./images/thumbsup.png" alt="icon" style="margin-right:30px;" class="rating-icon thumbs-up">
                         <img src="./images/thumbsdown.png" alt="icon" class="rating-icon thumbs-down">
                     </div>
@@ -174,4 +183,5 @@ document.getElementById('reset-btn').addEventListener('click', function () {
     // gen new sessionID
     sessionId = generateUUID();
     localStorage.setItem('sessionId', sessionId);
+    console.log("Generated sessionId on reset:", sessionId);
 });

@@ -132,19 +132,27 @@ body{
 }
 
 
-/*!*=============================* main content - SIS*!*/
+/*=============================* main content - SIS*/
 #wrap-main-content{
     font-family: 'Plus Jakarta Sans', sans-serif;
 /*    background-color: lightcyan;*/
-    width: 80dvw !important;
+    width: 65dvw !important;
     padding:30px;
     box-sizing: border-box;
 /*    padding-bottom:20px;*/
+    position: relative;
 }
 
 #wrap-main-content h1{
     margin-bottom: 5%;
 
+}
+#chat-dialog-UI{
+/*    background-color: darkgreen;*/
+/*    width: 100%;*/
+    position: relative;
+/*    height: 500px;*/
+    box-sizing: border-box;
 }
 
 #intro-descr{
@@ -186,14 +194,6 @@ body{
     display: none;
 }
 
-
-/*#logo-primary-small-screen{*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    height:70%;*/
-/*    top:15%;*/
-/*    left:80px;*/
-/*}*/
 .navbar-toggler-icon{
     outline: none;
 }
@@ -201,9 +201,154 @@ body{
 
 /*===========================*/
 /* smallest iphone */
-@media (min-width: 344px) and (max-width: 414px){
+@media screen and (orientation: portrait) and (min-width: 344px) and (max-width: 413px){
+    /*========== page 1 ===== introduction ========*/
     #intro-header{
         font-size:20px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:10px;
+    }
+    .main-content-btn{
+        font-size:10px;
+    }
+    #wrap-main-content{
+        padding:0;
+        box-sizing: border-box;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+    /*--------feedback link----------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:10px;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+
+}
+
+@media screen and (orientation: portrait) and (min-width: 414px) and (max-width: 576px) {
+    /*========== page 1 ===== introduction ========*/
+    #intro-header{
+        font-size:24px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:12px;
+    }
+    .main-content-btn{
+        font-size:12px;
+    }
+    #wrap-main-content{
+        padding:0;
+        box-sizing: border-box;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    /*--------feedback link----------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:3dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+
+
+}
+
+@media screen and (orientation: portrait) and (min-width: 577px) and (max-width: 666px) {
+    /*========== page 1 ===== introduction ========*/
+    #intro-header{
+        font-size:24px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:12px;
+    }
+    .main-content-btn{
+        font-size:12px;
+    }
+    #wrap-main-content{
+        padding:0;
+        box-sizing: border-box;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    /*--------feedback link----------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:5dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+
+
+}
+
+
+
+@media screen and (orientation: landscape) and (min-width: 667px) and (max-width: 767px) {
+    #intro-header{
+        font-size:28px;
         font-weight: bold;
     }
     #wrap-main-content>p{
@@ -214,289 +359,40 @@ body{
     }
     #wrap-main-content a{
         width:100%;
+        font-size: 12px !important;
+        margin-bottom: 5px;
+/*        font-size: 12px;*/
+    }
+    #wrap-main-content{
+        padding:0;
+        box-sizing: border-box;
         font-size: 12px;
     }
-    #wrap-main-content{
-        padding:0;
-        box-sizing: border-box;
-    }
 
     /*------------------*/
     #feedback-link-bottom{
+        font-size:12px;
         display: block;
         position:absolute;
-        bottom:20px;
+        bottom:0;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    /*-----logo school setting for horizontal mobile ------*/
-/*    #header-navbar {*/
-/*        height: 8dvh;*/
-/*    }*/
-
-
-/*    !*--------------*!*/
-/*    #header-navbar{*/
-/*        left:-12px;*/
-/*    }*/
-
-/*    .navbar-toggler-icon{*/
-/*        position: relative;*/
-/*        margin-right:-20px;*/
-/*        height:40px;*/
-/*    }*/
-
-    #logo-primary-small-screen{
-        display: block;
-        position: absolute;
-        height:70%;
-        top:15%;
-/*        left:20%;*/
-    }
-
-    /*#logo-primary-small-screen{*/
-    /*    display: block;*/
-    /*    position: absolute;*/
-    /*    height:70%;*/
-    /*    top:15%;*/
-    /*    left:80px;*/
-    /*}*/
-
-}
-
-/*Small devices (landscape phones, 414px and up)*/
-@media (min-width: 414px) and (max-width: 576px) {
-    #intro-header{
-        font-size:25px;
-        font-weight: bold;
-    }
-    #wrap-main-content>p{
-        font-size:14px;
-    }
-    .main-content-btn{
-        font-size:14px;
-    }
-    #wrap-main-content a{
-        width:100%;
-        font-size: 14px;
-    }
-    #wrap-main-content{
-        padding:0;
-        box-sizing: border-box;
-    }
-
-    /*------------------*/
-    #feedback-link-bottom{
-        display: block;
-        position:absolute;
-        bottom:20px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-/*    !*--------toggle bar-----*!*/
-/*    .navbar-toggler-icon{*/
-/*        background-color: green !important;*/
-/*        width: 60px;*/
-/*        height: 100%;*/
-/*    }*/
-
-/*    !*--------------*!*/
-/*    #header-navbar{*/
-/*        left:-20px;*/
-/*    }*/
-
-/*    .navbar-toggler-icon{*/
-/*        position: relative;*/
-/*        margin-right:0px;*/
-/*        height:35px;*/
-/*    }*/
-
-/*    #logo-primary-small-screen{*/
-/*        display: block;*/
-/*!*        position: absolute;*!*/
-/*        height:70%;*/
-/*        top:15%;*/
-/*!*        left:100px;*!*/
-/*    }*/
-
-
-    #logo-primary-small-screen{
-        display: block;
-        position: absolute;
-        height:70%;
-        top:15%;
-/*        left:20%;*/
-    }
-
-
-}
-
-@media (min-width: 577px) and (max-width: 660px) {
-    #intro-header{
-        font-size:25px;
-        font-weight: bold;
-    }
-    #wrap-main-content>p{
-        font-size:14px;
-    }
-    .main-content-btn{
-        font-size:14px;
-    }
-    #wrap-main-content a{
-        width:100%;
-        font-size: 14px;
-    }
-    #wrap-main-content{
-        padding:0;
-        box-sizing: border-box;
-    }
-
-    /*------------------*/
-    #feedback-link-bottom{
-        display: block;
-        position:absolute;
-        bottom:20px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
 
 
     /*--------------*/
-    #header-navbar{
-/*        left:0px;*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:5dvw;
     }
-
-/*    .navbar-toggler-icon{*/
-/*        position: relative;*/
-/*        margin-right:0px;*/
-/*        height:35px;*/
-/*    }*/
 
     #logo-primary-small-screen{
         display: block;
         position: absolute;
         height:70%;
         top:15%;
-/*        left:80px;*/
+/*        left:70px !important;*/
     }
-
-    /*-----logo school setting for horizontal mobile ------*/
-    #header-navbar {
-        height: 11dvh;
-    }
-
-}
-
-/*-----logo school setting for horizontal mobile ------*/
-/*    #header-navbar {*/
-/*        height: 8dvh;*/
-/*    }*/
-
-
-/*Medium devices (landscape phones, 576px and up)*/
-@media (min-width: 661px) and (max-width: 767px) {
-    #intro-header{
-        font-size:25px;
-        font-weight: bold;
-    }
-    #wrap-main-content>p{
-        font-size:14px;
-    }
-    .main-content-btn{
-        font-size:14px;
-    }
-    #wrap-main-content a{
-        width:100%;
-        font-size: 14px;
-    }
-    #wrap-main-content{
-        padding:0;
-        box-sizing: border-box;
-    }
-
-    /*------------------*/
-    #feedback-link-bottom{
-        display: block;
-        position:absolute;
-        bottom:20px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-
-    /*--------------*/
-    #header-navbar{
-        left:50px;
-    }
-
-/*    .navbar-toggler-icon{*/
-/*        position: relative;*/
-/*        margin-right:0px;*/
-/*        height:35px;*/
-/*    }*/
-
-    #logo-primary-small-screen{
-        display: block;
-        position: absolute;
-        height:70%;
-        top:15%;
-        left:70px !important;
-    }
-
-    /*-----logo school setting for horizontal mobile ------*/
-    #header-navbar {
-        height: 12dvh;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 819px){
-    #intro-header{
-        font-size:46px;
-        font-weight: bold;
-    }
-    #wrap-main-content>p{
-        font-size:20px;
-    }
-    .main-content-btn{
-        font-size:20px;
-    }
-    #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
-    }
-
-    /*------------------*/
-    #feedback-link-bottom{
-        display: block;
-        position:absolute;
-        bottom:20px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-        /*--------------*/
-        #header-navbar{
-            left:80px;
-        }
-
-    /*    .navbar-toggler-icon{*/
-    /*        position: relative;*/
-    /*        margin-right:0px;*/
-    /*        height:35px;*/
-    /*    }*/
-
-        #logo-primary-small-screen{
-            display: block;
-            position: absolute;
-            height:70%;
-            top:15%;
-            left:90px !important;
-        }
 
     /*-----logo school setting for horizontal mobile ------*/
     #header-navbar {
@@ -504,24 +400,32 @@ body{
     }
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 820px) and (max-width: 852px){
+@media screen and (orientation: portrait) and (min-width: 667px) and (max-width: 767px) {
+
+
+    /*========== page 1 ===== introduction ========*/
     #intro-header{
-        font-size:46px;
+        font-size:24px;
         font-weight: bold;
     }
     #wrap-main-content>p{
-        font-size:20px;
+        font-size:12px;
     }
     .main-content-btn{
-        font-size:20px;
+        font-size:12px;
+    }
+    #wrap-main-content{
+        padding:0;
+        box-sizing: border-box;
     }
     #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
-    }
+        width:45%;
+        font-size: 16px;
+        font-weight: bold;
+        }
 
-    /*------------------*/
+
+    /*--------feedback link----------*/
     #feedback-link-bottom{
         display: block;
         position:absolute;
@@ -530,281 +434,279 @@ body{
         transform: translate(-50%, -50%);
     }
 
-        /*--------------*/
-        #header-navbar{
-            left:60px;
-        }
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:7dvw;
+    }
 
-    /*    .navbar-toggler-icon{*/
-    /*        position: relative;*/
-    /*        margin-right:0px;*/
-    /*        height:35px;*/
-    /*    }*/
-
-        #logo-primary-small-screen{
-            display: block;
-            position: absolute;
-            height:70%;
-            top:15%;
-            left:70px !important;
-        }
-
-        /*-----logo school setting for horizontal mobile ------*/
-        #header-navbar {
-            height: 12dvh;
-        }
-
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
 
 }
 
-@media (min-width: 853px) and (max-width: 991px){
+
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 852px) {
     #intro-header{
-        font-size:46px;
+        font-size:30px;
         font-weight: bold;
     }
     #wrap-main-content>p{
-        font-size:20px;
+        font-size:14px;
     }
     .main-content-btn{
-        font-size:20px;
+        font-size:14px;
     }
     #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
+        width:45%;
+        font-size: 14px;
     }
 
     /*------------------*/
     #feedback-link-bottom{
         display: block;
         position:absolute;
-        bottom:20px;
+        bottom:14px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-        /*--------------*/
-        #header-navbar{
-            left:-0px !important;
-            background-color: lightgreen;
-        }
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
 
-/*!*        .navbar-toggler-icon{*!*/
-/*!*            position: relative;*!*/
-/*!*            margin-right:0px;*!*/
-/*!*            height:35px;*!*/
-/*!*        }*!*/
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:10dvw;
+    }
 
-        #logo-primary-small-screen{
-            display: block;
-            position: absolute;
-            height:70%;
-            top:15%;
-            left:120px;
-        }
-
-
-        /*-----logo school setting for horizontal mobile ------*/
-        #header-navbar {
-            height: 12dvh;
-        }
-
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
 }
 
-
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1024px){
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 852px) {
     #intro-header{
-        font-size:46px;
+        font-size:30px;
         font-weight: bold;
     }
     #wrap-main-content>p{
-        font-size:20px;
+        font-size:18px;
     }
     .main-content-btn{
-        font-size:20px;
+        font-size:18px;
     }
     #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
+        width:45%;
+        font-size: 18px;
     }
 
-
-    #wrap-main-content{
-        font-family: 'Plus Jakarta Sans', sans-serif;
-/*        background-color: lightcyan;*/
-        width: 75dvh;
-        padding:30px;
-        box-sizing: border-box;
-    /*    padding-bottom:20px;*/
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:18px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
 
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:10dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
 
 }
 
 
-@media (min-width: 1025px) and (max-width: 1179px){
+
+@media screen and (orientation: landscape) and (min-width: 853px) and (max-width: 920px){
+
     #intro-header{
-        font-size:46px;
+        font-size:36px;
         font-weight: bold;
     }
     #wrap-main-content>p{
-        font-size:20px;
+        font-size:14px;
     }
     .main-content-btn{
-        font-size:20px;
+        font-size:14px;
     }
     #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
+        width:45%;
+        font-size: 14px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:14px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 
-    #wrap-main-content{
-        font-family: 'Plus Jakarta Sans', sans-serif;
-/*        background-color: lightcyan;*/
-        width: 90dvh;
-        padding:30px;
-        box-sizing: border-box;
-    /*    padding-bottom:20px;*/
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
     }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:3dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+
 }
 
-@media (min-width: 1180px) and (max-width: 1279px){
+@media screen and (orientation: portrait) and (min-width: 853px) and (max-width: 920px){
+
+
+    /*--------------*/
+    #header-navbar{
+        position: relative;
+        height: 12dvh;
+    }
+    .navbar-toggler-icon{
+        position:absolute;
+        padding: 0 !important;
+        bottom:0;
+        left:10dvw;
+    }
+
+    .navbar-toggler-icon{
+        position: relative;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+
+}
+
+/*!*Large devices (desktops, 992px and up)*!*/
+@media screen and (orientation: landscape) and (min-width: 921px) and (max-width: 1024px){
     #intro-header{
-        font-size:46px;
+        font-size:36px;
         font-weight: bold;
     }
     #wrap-main-content>p{
-        font-size:20px;
+        font-size:14px;
     }
     .main-content-btn{
-        font-size:20px;
+        font-size:14px;
     }
     #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
+        width:45%;
+        font-size: 14px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:14px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 
-    #wrap-main-content{
-        font-family: 'Plus Jakarta Sans', sans-serif;
-/*        background-color: lightcyan;*/
-        width: 100dvh;
-        padding:30px;
-        box-sizing: border-box;
-    /*    padding-bottom:20px;*/
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:3dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
     }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1280px) {
+@media screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1200px){
     #intro-header{
-        font-size:46px;
+        font-size:36px;
         font-weight: bold;
     }
     #wrap-main-content>p{
-        font-size:20px;
+        font-size:14px;
     }
     .main-content-btn{
-        font-size:20px;
+        font-size:14px;
     }
     #wrap-main-content a{
-        width:40%;
-        font-size: 20px;
+        width:45%;
+        font-size: 14px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:14px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 
-    #wrap-main-content{
-        font-family: 'Plus Jakarta Sans', sans-serif;
-/*        background-color: lightcyan;*/
-        width: 110dvh;
-        padding:30px;
-        box-sizing: border-box;
-    /*    padding-bottom:20px;*/
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:3dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
     }
 }
 
 
-
-
-/*.main-content-btn:hover{*/
-/*    background-color:#EC221F;*/
-/*    color:#fff;*/
-/*}*/
-/*.main-content-btn a{*/
-/*    text-decoration:none;*/
-/*    color:#000;*/
-/*}*/
-/*.main-content-btn:hover a{*/
-/*    color:#fff;*/
-/*}*/
-/*.main-content-btn a:hover{*/
-/*    color:#fff;*/
-/*}*/
-
-
-
-/*#main-content-div{*/
-/*    background-color:white;*/
-/*}*/
-/*#wrap-main-content p{*/
-/*    margin-top:10%;*/
-/*}*/
-
-/*.main-content-btn{*/
-/*    height:100px;*/
-/*    border:1.5px solid #EC221F;*/
-/*    color:#000;*/
-/*    background-color:#fff;*/
-/*}*/
-
-
-
-
-
-/*!* Extra small devices (portrait phones, less than 576px)*!*/
-/*@media (max-width: 575.98px) {*/
-/*!**/
-/*.sidebar img {*/
-/*    width:200px;*/
-/*    height: auto;*/
-/*  }*/
-/*}*/
-/**!*/
-/*    #su-btn{*/
-
-/*        width:100%;*/
-/*        margin-bottom:5%;*/
-/*    }*/
-/*    #buv-btn{*/
-
-/*        width:100%;*/
-/*    }*/
-/*}*/
-/*!**/
-/*// Small devices (landscape phones, less than 768px)*/
-/*@media (max-width: 767.98px) {*/
-/* .sidebar img {*/
-/*    width:200px;*/
-/*    height: auto;*/
-/*  }*/
-/* }*/
-
-/*// Medium devices (tablets, less than 992px)*/
-/*@media (max-width: 991.98px) {*/
-/* .sidebar img {*/
-/*    width:200px;*/
-/*    height: auto;*/
-/*  }*/
-/* }*/
-
-/*// Large devices (desktops, less than 1200px)*/
-/*@media (max-width: 1199.98px) {*/
-/* .sidebar img {*/
-/*    width:200px;*/
-/*    height: auto;*/
-/*  }*/
-/* }*/
 
