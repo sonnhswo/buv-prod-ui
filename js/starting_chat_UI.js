@@ -1,8 +1,8 @@
 
-window.addEventListener("orientationchange", function() {
-    location.reload();  // Refresh lại toàn bộ trang
+//window.addEventListener("orientationchange", function() {
+//    location.reload();  // Refresh lại toàn bộ trang
 //    alert("change lanscape");
-});
+//});
 /*----------------------------------------------------------*/
 
 

@@ -1,7 +1,7 @@
-window.addEventListener("orientationchange", function() {
-    location.reload();  // Refresh lại toàn bộ trang
+//window.addEventListener("orientationchange", function() {
+//    location.reload();  // Refresh lại toàn bộ trang
 //    alert("asd change lanscape");
-});
+//});
 
 // can chinh nut menu toggle
 window.onload = function() {
