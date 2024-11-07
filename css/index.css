@@ -124,7 +124,6 @@ body{
     bottom:5dvh;
     width: 90%;
     margin-left:5%;
-
 }
 #intro-header{
 /*    font-size: 14px !important;*/
@@ -136,6 +135,7 @@ body{
 #wrap-main-content{
     font-family: 'Plus Jakarta Sans', sans-serif;
 /*    background-color: lightcyan;*/
+/*    width: 65dvw !important;*/
     width: 65dvw !important;
     padding:30px;
     box-sizing: border-box;
@@ -201,6 +201,7 @@ body{
 
 /*===========================*/
 /* smallest iphone */
+
 @media screen and (orientation: portrait) and (min-width: 344px) and (max-width: 413px){
     /*========== page 1 ===== introduction ========*/
     #intro-header{
@@ -617,7 +618,7 @@ body{
 
 }
 
-/*!*Large devices (desktops, 992px and up)*!*/
+
 @media screen and (orientation: landscape) and (min-width: 921px) and (max-width: 1024px){
     #intro-header{
         font-size:36px;
@@ -636,13 +637,12 @@ body{
 
     /*------------------*/
     #feedback-link-bottom{
-        display: block;
-        position:absolute;
-        bottom:14px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: none;
     }
 
+    #feedback-larger-screen{
+        bottom:7dvh;
+    }
 
     /*-----logo school setting for horizontal mobile ------*/
     #header-navbar {
@@ -681,11 +681,10 @@ body{
 
     /*------------------*/
     #feedback-link-bottom{
-        display: block;
-        position:absolute;
-        bottom:14px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: none;
+    }
+    #feedback-larger-screen{
+        bottom:7dvh;
     }
 
 

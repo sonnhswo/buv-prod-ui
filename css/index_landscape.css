@@ -1,0 +1,244 @@
+
+
+@media screen and (orientation: landscape) and (min-width: 667px) and (max-width: 767px) {
+    #intro-header{
+        font-size:28px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:12px;
+    }
+    .main-content-btn{
+        font-size:12px;
+    }
+    #wrap-main-content a{
+        width:100%;
+        font-size: 12px !important;
+        margin-bottom: 5px;
+/*        font-size: 12px;*/
+    }
+    #wrap-main-content{
+        padding:0;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        font-size:12px;
+        display: block;
+        position:absolute;
+        bottom:0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    /*--------------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:5dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+/*        left:70px !important;*/
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 852px) {
+    #intro-header{
+        font-size:30px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:14px;
+    }
+    .main-content-btn{
+        font-size:14px;
+    }
+    #wrap-main-content a{
+        width:45%;
+        font-size: 14px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:14px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:10dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (min-width: 853px) and (max-width: 920px){
+
+    #intro-header{
+        font-size:36px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:14px;
+    }
+    .main-content-btn{
+        font-size:14px;
+    }
+    #wrap-main-content a{
+        width:45%;
+        font-size: 14px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:14px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:3dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+
+}
+
+
+/*!*Large devices (desktops, 992px and up)*!*/
+@media screen and (orientation: landscape) and (min-width: 921px) and (max-width: 1024px){
+    #intro-header{
+        font-size:36px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:14px;
+    }
+    .main-content-btn{
+        font-size:14px;
+    }
+    #wrap-main-content a{
+        width:45%;
+        font-size: 14px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:14px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:3dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1200px){
+    #intro-header{
+        font-size:36px;
+        font-weight: bold;
+    }
+    #wrap-main-content>p{
+        font-size:14px;
+    }
+    .main-content-btn{
+        font-size:14px;
+    }
+    #wrap-main-content a{
+        width:45%;
+        font-size: 14px;
+    }
+
+    /*------------------*/
+    #feedback-link-bottom{
+        display: block;
+        position:absolute;
+        bottom:14px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    /*-----logo school setting for horizontal mobile ------*/
+    #header-navbar {
+        height: 12dvh;
+    }
+
+    /*-----logo school setting for horizontal mobile ------*/
+    .navbar-toggler-icon{
+        position: relative;
+        left:3dvw;
+    }
+
+    #logo-primary-small-screen{
+        display: block;
+        position: absolute;
+        height:70%;
+        top:15%;
+    }
+}
+

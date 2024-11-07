@@ -110,8 +110,6 @@ body{
 #chatbot-input-field>input{
     border: 1px #D6BC97 solid;
 }
-#chatbot-input-field input{
-}
 
 /*----chatbot UI---*/
 #send-btn{
@@ -373,7 +371,6 @@ body{
     }
 
     #chatbot-input-field{
-/*        margin-top:60px !important;*/
         bottom: 0;
     }
 
