@@ -96,7 +96,7 @@ function sendMessage() {
                     sourceUrl = 'https://buvbus.blob.core.windows.net/docs/PSG_Programme_Handbook_Oct_2024.pdf';
                     break;
                 case 'BUV Frequently Asked Questions':
-                    sourceUrl = 'https://buvbus.blob.core.windows.net/docs/SU_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf';
+                    sourceUrl = 'https://buvbus.blob.core.windows.net/docs/BUV_OCT24_FREQUENTLY_ASKED_QUESTIONS.pdf';
                     break;
                 default:
                     sourceUrl = '';
